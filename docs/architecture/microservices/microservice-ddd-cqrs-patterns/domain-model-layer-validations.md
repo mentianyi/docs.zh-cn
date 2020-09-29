@@ -34,7 +34,7 @@ public void SetAddress(Address address)
 }
 ```
 
-更好的示例将演示，需要确保内部状态未更改，或者方法的所有变化都已发生。 例如，下面的实现将使对象保持处于无效状态：
+更好的示例将演示，需要确保内部州的值未更改，或者方法的所有变化都已发生。 例如，下面的实现当state无效时将使对象引发异常：
 
 ```csharp
 public void SetAddress(string line1, string line2,
@@ -47,7 +47,7 @@ public void SetAddress(string line1, string line2,
 }
 ```
 
-如果状态的值无效，则第一个地址行和城市已更改。 这可能使地址无效。
+如果state的值无效，则第一个地址行和城市已更改。 这可能使地址无效。
 
 类似的方法可用于实体的构造函数中，引发异常来确保实体在创建后是有效的。
 
